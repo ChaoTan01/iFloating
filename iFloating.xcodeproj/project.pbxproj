@@ -16,6 +16,7 @@
 		97BD8BA81D81421D0013269F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BD8BA61D81421D0013269F /* LaunchScreen.storyboard */; };
 		97BD8BB31D81421D0013269F /* iFloatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD8BB21D81421D0013269F /* iFloatingTests.swift */; };
 		97BD8BBE1D81421D0013269F /* iFloatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD8BBD1D81421D0013269F /* iFloatingUITests.swift */; };
+		97BD8BD01D8146400013269F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD8BCF1D8146400013269F /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		97BD8BB91D81421D0013269F /* iFloatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFloatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BD8BBD1D81421D0013269F /* iFloatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFloatingUITests.swift; sourceTree = "<group>"; };
 		97BD8BBF1D81421D0013269F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BD8BCF1D8146400013269F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97B7D08D1D8147C7003399FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		97BD8B8D1D81421D0013269F = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				97BD8B991D81421D0013269F /* AppDelegate.swift */,
-				97BD8B9B1D81421D0013269F /* GameScene.sks */,
-				97BD8B9D1D81421D0013269F /* GameScene.swift */,
-				97BD8B9F1D81421D0013269F /* GameViewController.swift */,
+				97BD8BCB1D8145680013269F /* Utilities */,
+				97BD8BCE1D8145920013269F /* Model */,
+				97BD8BCD1D81458E0013269F /* View */,
+				97BD8BCC1D8145840013269F /* Scene */,
+				97B7D08D1D8147C7003399FC /* Controller */,
 				97BD8BA11D81421D0013269F /* Main.storyboard */,
 				97BD8BA41D81421D0013269F /* Assets.xcassets */,
 				97BD8BA61D81421D0013269F /* LaunchScreen.storyboard */,
@@ -129,6 +140,38 @@
 				97BD8BBF1D81421D0013269F /* Info.plist */,
 			);
 			path = iFloatingUITests;
+			sourceTree = "<group>";
+		};
+		97BD8BCB1D8145680013269F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				97BD8BCF1D8146400013269F /* Constant.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		97BD8BCC1D8145840013269F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				97BD8B9B1D81421D0013269F /* GameScene.sks */,
+				97BD8B9D1D81421D0013269F /* GameScene.swift */,
+				97BD8B9F1D81421D0013269F /* GameViewController.swift */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		97BD8BCD1D81458E0013269F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		97BD8BCE1D8145920013269F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +309,7 @@
 				97BD8B9E1D81421D0013269F /* GameScene.swift in Sources */,
 				97BD8BA01D81421D0013269F /* GameViewController.swift in Sources */,
 				97BD8B9A1D81421D0013269F /* AppDelegate.swift in Sources */,
+				97BD8BD01D8146400013269F /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +538,7 @@
 				97BD8BC41D81421D0013269F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97BD8BC51D81421D0013269F /* Build configuration list for PBXNativeTarget "iFloatingTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +547,7 @@
 				97BD8BC71D81421D0013269F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97BD8BC81D81421D0013269F /* Build configuration list for PBXNativeTarget "iFloatingUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +556,7 @@
 				97BD8BCA1D81421D0013269F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
